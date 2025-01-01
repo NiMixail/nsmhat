@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ШNSM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+
+        body {
+            font-family: Arial;
+            color: #e1e1e1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #vanta-container {
+            height: 150vh;
+        }
+
+        #header {
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #words-display {
+            position: fixed;
+            top: 30;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        #buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 250px;
+        }
+
+        .button {
+            font-family: Bahnschrift;
+            font-stretch: condensed;
+            background-color: #FFFFFF;
+            border: none;
+            color: black;
+            padding: 4px 4px;
+            text-align: center;
+            font-size: 18px;
+            margin: 2px 4px;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            opacity: 0.8;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        #wordContainer {
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #generateBtn, #okBtn, #send-button {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 2px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:focus, #popBtn:focus, #clearBtn:focus, #generateBtn:focus, #okBtn:focus, #leftBtn:focus, #rightBtn:focus {
+            outline: white solid 1px;
+        }
+
+        .button:hover, #popBtn, #clearBtn, #generateBtn, #okBtn, #leftBtn, #rightBtn, #send-button {
+            //display: block;
+            border: none;
+            background-color: transparent;
+            color: gray;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #popBtn img {
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+
+        #clearBtn img {
+            width: 30px;
+            height: 30px;
+            opacity: 0.7;
+            filter: invert(1);
+        }
+
+        .button:hover, #popBtn:hover, #clearBtn:hover, #generateBtn:hover, #okBtn:hover, #leftBtn:hover, #rightBtn:hover, #send-button:hover {
+            transform: scale(1.1);
+        }
+
+        #nickname-form {
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #nameInput, #message-input {
+            filter: invert(1);
+        }
+
+        #chat-messages {
+          height: 200px;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+        }
+
+        #chat-messages::-webkit-scrollbar {
+          display: none;
+        }
+        #chat-messages {
+          scrollbar-width: none; /* Firefox */
+        }
+
+        table {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            opacity: 0.95;
+        }
+
+        th, td {
+            padding: 3px;
+            border: 0px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        #words-display {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #user-info {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }}
+        
+        .cursor {
+            color: cyan;
+            animation: blink 1s infinite;
+
+          .box {
+              display: inline-block;
+              width: 100px;
+              height: 100px;
+              background-color: #ccc;
+              margin: 10px;
+          }
+        }
+    </style>
+</head>
+
+<body>
+<div id="vanta-container">
+<div id="header">
+    <h5><b>Шляпа NSM</b> 🎄 придумано и реализовано NiMixail © 2023—2024</h5>
+</div>
+
+<div id="words-display">
+    {% for word in words %}
+    {{ word }}
+    {% endfor %}
+</div>
+
+<div id="buttons-container">
+    <button id="clearBtn"><img
+          src="https://cdn-icons-png.flaticon.com/512/63/63481.png">
+    </button>
+  
+    <button class="button" id="опи" style="background-color: #FFFFF0"><i><u>ОПИСЫВАЕМОЕ</u></i></button>
+    <button class="button" id="." style="background-color: #FFFFF0">.ㅤ</button>
+    <button class="button" id="," style="background-color: #FFFFF0">,</button>
+    <button class="button" id="!" style="background-color: #FFFFF0">!</button>
+    <button class="button" id="ххх" style="background-color: #FFFFF0">𝗫</button>
+    <button class="button" id="ууу" style="background-color: #FFFFF0">𝗬</button>
+    <button class="button" id="ззз" style="background-color: #FFFFF0">𝗭</button>
+    <button class="button" id="шшш" style="background-color: #FFFFF0">𝗪</button>
+    <button class="button" id="это" style="background-color: #FFFFF0">ЭТОТ</button>
+    <button class="button" id="себ" style="background-color: #FFFFF0">СЕБЯ</button>
+    <button class="button" id="иии" style="background-color: #FFFFF0">И</button>
+    <button class="button" id="так" style="background-color: #FFFFF0">ТАКОЙ:</button>
+
+    <button class="button" id="ант" style="background-color: #D0D0D0">АНТИ-</button>
+    <button class="button" id="нее" style="background-color: #D0D0D0">НЕ</button>
+    <button class="button" id="оче" style="background-color: #D0D0D0">ОЧЕНЬ</button>
+    <button class="button" id="как" style="background-color: #D0D0D0">КАК</button>
+    <button class="button" id="бол" style="background-color: #D0D0D0">БОЛЕЕ ЧЕМ</button>
+
+    <button class="button" id="чел" style="background-color: #CCCCFF">ЧЕЛОВЕК</button>
+    <button class="button" id="что" style="background-color: #CCCCFF">ЧТО-ТО</button>
+    <button class="button" id="сво" style="background-color: #CCCCFF">СВОЙСТВО</button>
+    <button class="button" id="раз" style="background-color: #CCCCFF">РАЗНОВИДНОСТЬ</button>
+    <button class="button" id="час" style="background-color: #CCCCFF">ЧАСТЬ</button>
+    <button class="button" id="кол" style="background-color: #CCCCFF">КОЛИЧЕСТВО</button>
+
+    <button class="button" id="оди" style="background-color: #E3A9BE">ОДИНАКОВО</button>
+    <button class="button" id="дру" style="background-color: #E3A9BE">ДРУГОЙ</button>
+    <button class="button" id="нек" style="background-color: #E3A9BE">НЕКОТОРЫЙ</button>
+    <button class="button" id="все" style="background-color: #E3A9BE">ВСЕ</button>
+    <button class="button" id="оди" style="background-color: #E3A9BE">ОДИН</button>
+
+    <button class="button" id="бол" style="background-color: #FFFF99">БОЛЬШОЙ</button>
+    <button class="button" id="хор" style="background-color: #FFFF99">ХОРОШИЙ</button>
+
+    <button class="button" id="жит" style="background-color: #FFE2B7">ЖИТЬ</button>
+    <button class="button" id="дум" style="background-color: #FFE2B7">ДУМАТЬ</button>
+    <button class="button" id="зна" style="background-color: #FFE2B7">ЗНАТЬ</button>
+    <button class="button" id="хот" style="background-color: #FFE2B7">ХОТЕТЬ</button>
+    <button class="button" id="чув" style="background-color: #FFE2B7">ЧУВСТВОВАТЬ</button>
+    <button class="button" id="вид" style="background-color: #FFE2B7">ВИДЕТЬ</button>
+    <button class="button" id="слы" style="background-color: #FFE2B7">СЛЫШАТЬ</button>
+
+    <button class="button" id="гов" style="background-color: #C7FCEC">ГОВОРИТЬ</button>
+    <button class="button" id="яяя" style="background-color: #C7FCEC">Я</button>
+    <button class="button" id="ист" style="background-color: #C7FCEC">ИСТИНА</button>
+
+    <button class="button" id="быт" style="background-color: #D0F0C0">БЫТЬ</button>
+    <button class="button" id="слу" style="background-color: #D0F0C0">СЛУЧАТЬСЯ</button>
+    <button class="button" id="име" style="background-color: #D0F0C0">ИМЕТЬ</button>
+    <button class="button" id="моч" style="background-color: #D0F0C0">МОЧЬ</button>
+    <button class="button" id="дел" style="background-color: #D0F0C0">ДЕЛАТЬ</button>
+    <button class="button" id="спо" style="background-color: #D0F0C0">С ПОМОЩЬЮ</button>
+    <button class="button" id="нач" style="background-color: #D0F0C0">НАЧАТЬ</button>
+    <button class="button" id="изз" style="background-color: #D0F0C0">ИЗ-ЗА</button>
+    <button class="button" id="тог" style="background-color: #D0F0C0">- ТОГДА</button>
+
+    <button class="button" id="вре" style="background-color: #99FF99">ВРЕМЯ</button>
+    <button class="button" id="доо" style="background-color: #99FF99">ДО</button>
+    <button class="button" id="дви" style="background-color: #99FF99">ДВИГАТЬСЯ</button>
+
+    <button class="button" id="ввв" style="background-color: #DABDAB">В</button>
+    <button class="button" id="наа" style="background-color: #DABDAB">НА</button>
+    <button class="button" id="ккк" style="background-color: #DABDAB">К</button>
+    <button class="button" id="мес" style="background-color: #DABDAB">МЕСТО</button>
+    <button class="button" id="нап" style="background-color: #DABDAB">НАПРАВЛЕНИЕ</button>
+    <button class="button" id="вер" style="background-color: #DABDAB">ВЕРХ</button>
+    <button class="button" id="рас" style="background-color: #DABDAB">РАССТОЯНИЕ</button>
+    <button class="button" id="сто" style="background-color: #DABDAB">СТОРОНА</button>
+    <button class="button" id="кас" style="background-color: #DABDAB">КАСАТЬСЯ</button>
+
+    <button id="popBtn"><img
+            src="https://cdn3.iconfinder.com/data/icons/social-productivity-line-art-3/128/delete-1024.png">
+    </button>
+
+    <button id="leftBtn"> <b> < </b> </button>
+    <button id="rightBtn"> <b> > </b> </button>
+</div>
+
+<div>
+    <!-- <button id="generateBtn">Случайное слово</button> -->
+    <div id=wordContainer> </div>
+</div>
+
+<div class="container">
+<div id="nickname-form" class="container" class="box">
+    <div class="row">
+        <form method="POST" action="/" class="col-sm">
+            <input type="text" name="nickname" placeholder="Введите ник" id="nameInput">
+            <button type="submit" id="okBtn">ОК</button>
+        </form>
+        <p class="col-sm">Ваш ник: <b id="me">...</b></p>
+        <p class="col-sm">Сейчас объясняет: <b id="current">...</b></p>
+      
+        <p class="col-sm">
+          <div id="chat" class="box">
+              <input type="text" id="message-input" placeholder="Ввод...">
+              <button id="send-button">▶</button>
+              <div id="chat-messages"></div>
+          </div>
+        </p>
+    </div>
+</div>
+
+  
+
+<div id="user-info" class="box">
+    <table>
+        <thead>
+        <tr>
+            <th>Ник</th>
+            <th>Очки</th>
+            <!--<th>Онлайн?</th>-->
+        </tr>
+        </thead>
+        <tbody id="userTableBody">
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js">
+</script>
+<script>
+    const nickname = "{{ nickname }}";
+    ip = '';
+    current_user = "{{ current_user }}";
+    users = "Loading...";
+    words = [];
+    cursor_pos = 0;
+
+    const socket = io.connect('https://47de1adf-313d-4a87-910c-c6e65b7d3e44-00-70jud9jx0bpg.spock.replit.dev/');
+
+    function addButtonClickEvent(button) {
+        button.addEventListener('click', function () {
+            if (ip == current_user) {
+            const word = button.textContent;
+            socket.emit('button_click', {word: word, cursor: cursor_pos});
+            }
+        });
+    }
+
+    const buttons = document.getElementsByClassName('button');
+    for (const button of buttons) {
+        addButtonClickEvent(button);
+    }
+
+    const popBtn = document.getElementById('popBtn');
+    popBtn.addEventListener('click', function () {
+        if (ip == current_user) 
+        { socket.emit('pop_button_click', {cursor: cursor_pos}); }
+        });
+
+    const leftBtn = document.getElementById('leftBtn');
+    const rightBtn = document.getElementById('rightBtn');
+    leftBtn.addEventListener('click', function(){ arrow(false) });
+    rightBtn.addEventListener('click', function(){ arrow(true) });
+  
+    const clearBtn = document.getElementById('clearBtn');
+    clearBtn.addEventListener('click', function () {
+        if (ip == current_user) { socket.emit('clear_button_click'); }
+        });
+
+  const chatMessages = document.getElementById("chat-messages");
+  const messageInput = document.getElementById("message-input");
+  const sendButton = document.getElementById("send-button");
+  sendButton.addEventListener("click", () => {
+      const message = messageInput.value;
+      if (message && (ip != current_user)) {
+          socket.emit('append_message', {nickname: ip, message: message.slice(-40)});
+          messageInput.value = "";
+      }
+  });
+  const inputField = document.getElementById('message-input'); 
+  inputField.addEventListener('keydown', function(event) {
+      const message = messageInput.value;
+      if (event.keyCode === 13 && message) {
+        if (ip != current_user) {      
+              socket.emit('append_message', {nickname: ip, message: message.slice(-40)});
+        }
+        messageInput.value = "";
+      }
+      });
+
+ inputField.addEventListener('input', function(event) {
+      const message = messageInput.value;
+     if (ip == current_user && (message.length == 3 || ",.!".includes(message))) {
+          messageInput.value = "";
+          document.getElementById(message).click();
+      }
+    });
+
+function displayWords() {
+  const wordsDisplay = document.getElementById('words-display');
+  let text;
+  if (cursor_pos == 0) {
+      text = words.join(' ');
+      }
+  else {
+      text = words.slice(0, cursor_pos).join(' ') + '<span class="cursor">|</span>' + words.slice(cursor_pos).join(' ');
+      }
+  wordsDisplay.innerHTML = text.replace(/ОПИСЫВАЕМОЕ/g, '<i>ОПИСЫВАЕМОЕ</i>').replace(/\s+(?=[.,!])/g, '');
+}
+
+function arrow(right) {
+  if (right) {
+    cursor_pos = Math.min(cursor_pos + 1, 0);
+  }
+  else {
+    cursor_pos = Math.max(cursor_pos - 1, -words.length);
+  }
+  displayWords();
+}
+  
+socket.on('word_added', function (data) {
+        words = data.words;
+        displayWords();
+    });
+  
+document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowLeft") {arrow(false)}
+  if (event.key === "ArrowRight") {arrow(true)}
+  if ((event.key === "Delete") && (ip == current_user)) {
+      socket.emit('pop_button_click', {cursor: cursor_pos});
+  }
+});
+
+socket.on('ip_address', function (data) {
+        const userIpElement = document.getElementById('me');
+        ip = data.ip;
+        userIpElement.textContent = ipToNickname(ip);
+    });
+    
+socket.on('current', function (data) {
+        const currentNickname = document.getElementById('current');
+        const wordContainer = document.getElementById('wordContainer');
+        const myNickname = document.getElementById('me');
+        current_user = data.current_ip
+        currentNickname.textContent = ipToNickname(current_user);
+        myNickname.textContent = ipToNickname(ip);
+        if (current_user == ip) {
+            if (data.word == '') {socket.emit('new_guessed_word');}
+            wordContainer.textContent = 'Вы объясняете слово: ' + data.word;
+        }
+        else {wordContainer.textContent = '🤔'}
+        //location.reload();
+       });
+
+socket.on('update_chat', function (data) {
+    chatMessages.innerHTML = '';
+    for (const tuple of data.chat) {
+      appendMessage(tuple[0], tuple[1]);
+    }
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+});
+
+socket.on('yay', function (data) {
+      window.alert("Игрок " + ipToNickname(data.old) + " объяснял слово '" + data.word + "'! Отгадал его и теперь объясняет: " + ipToNickname(data.new));
+  });
+
+function appendMessage(sender, text) {
+    const messageElement = document.createElement("div");
+    messageElement.innerHTML = `<strong>${ipToNickname(sender)}:</strong> ${text}`;
+    chatMessages.appendChild(messageElement);
+}
+
+socket.on('user_list', function (data) {
+    const userTableBody = document.getElementById('userTableBody');
+    userTableBody.innerHTML = '';
+    users = data.users;
+
+    users.forEach(user => {
+        const row = document.createElement('tr');
+        const nicknameCell = document.createElement('td');
+        const pointsCell = document.createElement('td');
+        const onlineCell = document.createElement('td');
+
+        nicknameCell.textContent = user.nickname;
+        pointsCell.textContent = user.points;
+        if (user.online) { onlineCell.textContent = '✓'; }
+        else { onlineCell.textContent = '✕';}
+
+        //nicknameCell.addEventListener('click', function () {
+        //    if ((nickname==current_user) && (nicknameCell.textContent != nickname) &&
+        //    confirm('Сделать игрока ' + nicknameCell.textContent + ' объясняющим?'))
+        //    {socket.emit('next_user', {nickname: user.nickname});
+        //    socket.emit('new_guessed_word');}
+        //});
+        row.appendChild(nicknameCell);
+        row.appendChild(pointsCell);
+        //row.appendChild(onlineCell);
+        userTableBody.appendChild(row);
+    });
+});
+
+
+function getRandomWord() {
+    const randomIndex = Math.floor(Math.random() * tobeguessed.length);
+    return tobeguessed[randomIndex];
+}
+
+        //const randomWord = getRandomWord();
+        //wordContainer.textContent = `${randomWord}`;}
+    
+// for console
+function editPoints(ip, delta) {
+    socket.emit('edit_points', {ip: ip, delta: delta});
+}
+
+function ipToNickname(ip_) {
+    if (ip_ == '_sys_') {
+        return 'ШNSM';
+    }
+    for (const u of users) {
+        if (u.ip == ip_) {
+            return u.nickname;
+        }
+    }
+    return '???';
+}
+    
+const nameInput = document.getElementById('nameInput');
+// const okBtn = document.getElementById('okBtn');
+// okBtn.addEventListener('click', function f() {
+  //okBtn.style.display = 'none'; nameInput.style.display = 'none';
+// });
+    
+//const generateBtn = document.getElementById('generateBtn');
+//generateBtn.addEventListener('click', newGuessedWord);
+</script>
+</div>
+</body>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+<script>
+    VANTA.FOG({
+      el: "#vanta-container",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0x2c1305,
+      midtoneColor: 0x60638,
+      lowlightColor: 0x15924,
+      baseColor: 0xb0213,
+      blurFactor: 0.90,
+      speed: 1.50,
+      zoom: 1.50
+    })
+</script>
+    
+</html>
