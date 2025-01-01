@@ -1,0 +1,462 @@
+SESSION STARTED at 2024-08-13 19:00:29.855641
+2024-08-13 19:01:01.913270
+телефон! NiM → Ы
+[]
+[{'nickname': 'NiM', 'points': 1, 'online': True}, {'nickname': None, 'points': 0, 'online': True}, {'nickname': 'Ы', 'points': 1, 'online': True}]
+
+2024-08-13 19:01:39.120316
+коралл! Ы → NiM
+[]
+[{'nickname': 'NiM', 'points': 2, 'online': True}, {'nickname': None, 'points': 0, 'online': True}, {'nickname': 'Ы', 'points': 2, 'online': True}]
+
+2024-08-13 19:01:56.952292
+Ы gained 100 points
+
+
+
+SESSION STARTED at 2024-08-13 19:13:00.954650
+
+
+SESSION STARTED at 2024-08-13 19:14:18.543353
+
+
+SESSION STARTED at 2024-08-13 19:14:47.534658
+
+
+SESSION STARTED at 2024-08-13 21:35:29.753411
+
+
+SESSION STARTED at 2024-08-13 21:38:21.595146
+
+
+SESSION STARTED at 2024-08-13 21:39:13.525995
+
+
+SESSION STARTED at 2024-08-13 21:39:47.505937
+
+
+SESSION STARTED at 2024-08-13 21:43:46.748230
+
+
+SESSION STARTED at 2024-08-13 21:45:50.664143
+
+
+SESSION STARTED at 2024-08-13 21:46:12.397776
+
+
+SESSION STARTED at 2024-08-13 21:46:30.621130
+
+
+SESSION STARTED at 2024-08-13 21:47:56.715812
+
+
+SESSION STARTED at 2024-08-14 13:59:21.448272
+
+
+SESSION STARTED at 2024-08-14 16:47:24.751332
+
+
+SESSION STARTED at 2024-08-14 18:23:42.491995
+
+
+SESSION STARTED at 2024-08-14 18:25:44.108586
+
+
+SESSION STARTED at 2024-08-14 18:26:54.387257
+
+
+SESSION STARTED at 2024-08-14 18:27:32.148440
+
+
+SESSION STARTED at 2024-08-14 19:05:23.510441
+
+
+SESSION STARTED at 2024-08-14 19:11:37.279989
+
+
+SESSION STARTED at 2024-08-14 19:12:47.109196
+
+
+SESSION STARTED at 2024-08-15 18:08:34.583791
+
+
+SESSION STARTED at 2024-12-27 22:52:17.766265
+
+
+SESSION STARTED at 2024-12-27 23:03:55.362324
+
+
+SESSION STARTED at 2024-12-27 23:06:20.271650
+
+
+SESSION STARTED at 2024-12-27 23:09:02.732168
+
+
+SESSION STARTED at 2024-12-27 23:11:24.112353
+
+
+SESSION STARTED at 2024-12-27 23:13:44.895451
+
+
+SESSION STARTED at 2024-12-27 23:19:03.164617
+2024-12-27 23:20:52.248489
+библиотека! амогус → абобус
+['МЕСТО', 'НАПРАВЛЕНИЕ', 'СЛЫШАТЬ', 'РАССТОЯНИЕ']
+[{'nickname': 'амогус', 'points': 1, 'online': True}, {'nickname': None, 'points': 0, 'online': False}, {'nickname': 'мнафон', 'points': 0, 'online': False}, {'nickname': 'абобус', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-27 23:22:55.149054
+
+
+SESSION STARTED at 2024-12-27 23:25:29.992267
+
+
+SESSION STARTED at 2024-12-27 23:30:16.641041
+
+
+SESSION STARTED at 2024-12-27 23:31:21.883725
+
+
+SESSION STARTED at 2024-12-27 23:31:51.642148
+
+
+SESSION STARTED at 2024-12-27 23:35:22.119001
+
+
+SESSION STARTED at 2024-12-27 23:36:28.245793
+
+
+SESSION STARTED at 2024-12-27 23:36:43.812669
+
+
+SESSION STARTED at 2024-12-27 23:38:24.753429
+
+
+SESSION STARTED at 2024-12-27 23:39:12.328285
+
+
+SESSION STARTED at 2024-12-27 23:40:52.282437
+
+
+SESSION STARTED at 2024-12-27 23:41:32.315136
+
+
+SESSION STARTED at 2024-12-27 23:44:01.700202
+
+
+SESSION STARTED at 2024-12-27 23:47:48.554378
+
+
+SESSION STARTED at 2024-12-27 23:51:17.961279
+
+
+SESSION STARTED at 2024-12-27 23:51:59.241335
+
+
+SESSION STARTED at 2024-12-27 23:52:41.194253
+
+
+SESSION STARTED at 2024-12-27 23:55:07.675586
+
+
+SESSION STARTED at 2024-12-27 23:58:22.011553
+
+
+SESSION STARTED at 2024-12-28 00:02:24.853775
+
+
+SESSION STARTED at 2024-12-28 00:04:30.185615
+
+
+SESSION STARTED at 2024-12-28 00:07:04.091841
+
+
+SESSION STARTED at 2024-12-28 00:08:02.668499
+
+
+SESSION STARTED at 2024-12-28 00:08:44.184123
+
+
+SESSION STARTED at 2024-12-28 00:08:57.616543
+
+
+SESSION STARTED at 2024-12-28 00:09:13.703761
+
+
+SESSION STARTED at 2024-12-28 00:14:58.135047
+
+
+SESSION STARTED at 2024-12-28 00:15:35.016540
+
+
+SESSION STARTED at 2024-12-28 00:20:13.811101
+
+
+SESSION STARTED at 2024-12-28 00:25:23.845964
+
+
+SESSION STARTED at 2024-12-28 00:31:28.314364
+
+
+SESSION STARTED at 2024-12-28 00:35:49.080291
+
+
+SESSION STARTED at 2024-12-28 00:42:10.273777
+
+
+SESSION STARTED at 2024-12-28 00:43:27.287106
+2024-12-28 00:44:12.229783
+природа! sss → ыыы
+['НАПРАВЛЕНИЕ', 'НАПРАВЛЕНИЕ', 'ЧУВСТВОВАТЬ', 'ЧУВСТВОВАТЬ', 'ЧУВСТВОВАТЬ', 'ЧУВСТВОВАТЬ', 'ЧУВСТВОВАТЬ']
+[{'nickname': 'sss', 'points': 1, 'online': True}, {'nickname': 'ыыы', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-28 12:07:17.362589
+
+
+SESSION STARTED at 2024-12-29 10:18:10.000118
+
+
+SESSION STARTED at 2024-12-29 11:10:20.670017
+
+
+SESSION STARTED at 2024-12-29 11:21:21.815094
+
+
+SESSION STARTED at 2024-12-29 11:31:48.416424
+
+
+SESSION STARTED at 2024-12-29 11:35:35.247228
+
+
+SESSION STARTED at 2024-12-29 11:40:41.075194
+
+
+SESSION STARTED at 2024-12-29 11:49:48.702116
+
+
+SESSION STARTED at 2024-12-29 11:53:53.688411
+
+
+SESSION STARTED at 2024-12-29 11:56:36.179965
+
+
+SESSION STARTED at 2024-12-29 12:11:25.450882
+
+
+SESSION STARTED at 2024-12-29 12:21:15.754017
+
+
+SESSION STARTED at 2024-12-29 12:27:39.302313
+
+
+SESSION STARTED at 2024-12-29 12:32:16.690977
+
+
+SESSION STARTED at 2024-12-29 12:35:12.224010
+
+
+SESSION STARTED at 2024-12-29 12:47:19.537195
+
+
+SESSION STARTED at 2024-12-29 12:52:59.417309
+
+
+SESSION STARTED at 2024-12-29 13:11:16.724757
+
+
+SESSION STARTED at 2024-12-29 13:22:37.241946
+2024-12-29 13:23:31.444729
+планетарий! 95.26.117.185 → 85.140.3.212
+['ЧУВСТВОВАТЬ', 'ЧУВСТВОВАТЬ', 'БОЛЕЕ ЧЕМ', 'КАК', 'ЗНАТЬ', 'НА']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+2024-12-29 13:25:44.019696
+остров! 85.140.3.212 → 95.26.117.185
+[]
+[{'ip': '95.26.117.185', 'points': 2, 'online': False}, {'ip': '85.140.3.212', 'points': 2, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 14:19:51.671743
+2024-12-29 14:22:01.216475
+дельфин! 95.26.117.185 → 85.140.3.212
+['ТАКОЙ:', 'ОЧЕНЬ', 'НА', 'НАПРАВЛЕНИЕ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': False}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 14:23:57.985625
+2024-12-29 14:25:55.020423
+радио! 95.26.117.185 → 85.140.3.212
+['ОЧЕНЬ', 'БОЛЕЕ ЧЕМ', 'БОЛЕЕ ЧЕМ', 'НАПРАВЛЕНИЕ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+2024-12-29 14:26:30.339818
+чайник! 85.140.3.212 → 95.26.117.185
+['ОЧЕНЬ', 'БОЛЕЕ ЧЕМ', 'БОЛЕЕ ЧЕМ', 'НАПРАВЛЕНИЕ', 'ДО', 'СТОРОНА']
+[{'ip': '95.26.117.185', 'points': 2, 'online': False}, {'ip': '85.140.3.212', 'points': 2, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 14:28:48.337307
+
+
+SESSION STARTED at 2024-12-29 14:41:20.549811
+2024-12-29 14:41:50.622731
+судьба! 95.26.117.185 → 85.140.3.212
+['БОЛЕЕ ЧЕМ', 'ЧЕЛОВЕК', 'ЧТО-ТО']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+2024-12-29 14:43:21.105022
+95.26.117.185 gained 100 points
+
+
+
+SESSION STARTED at 2024-12-29 16:23:58.467316
+2024-12-29 16:24:28.829726
+комета! 95.26.117.185 → 85.140.3.212
+[]
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 16:27:09.822657
+2024-12-29 16:28:05.859799
+солнечное затмение! 95.26.117.185 → 85.140.3.212
+[]
+[{'ip': '95.26.117.185', 'points': 1, 'online': False}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+2024-12-29 16:28:24.830160
+водопад! 85.140.3.212 → 95.26.117.185
+[]
+[{'ip': '95.26.117.185', 'points': 2, 'online': True}, {'ip': '85.140.3.212', 'points': 2, 'online': True}]
+
+2024-12-29 16:28:36.707165
+птица! 95.26.117.185 → 85.140.3.212
+[]
+[{'ip': '95.26.117.185', 'points': 3, 'online': True}, {'ip': '85.140.3.212', 'points': 3, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 16:51:08.318136
+2024-12-29 16:52:47.372745
+долина! 95.26.117.185 → 85.140.3.212
+['НА', 'НА', 'НАПРАВЛЕНИЕ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 17:06:40.220517
+2024-12-29 17:25:36.413358
+дворец! 85.140.3.212 → 95.26.117.185
+['ЧУВСТВОВАТЬ', 'ВИДЕТЬ', 'СЛЫШАТЬ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+2024-12-29 17:26:01.903843
+поезд! 95.26.117.185 → 85.140.3.212
+['ЧУВСТВОВАТЬ', 'ВИДЕТЬ', 'СЛЫШАТЬ', 'ЧУВСТВОВАТЬ', 'СЛЫШАТЬ', 'ВЕРХ']
+[{'ip': '95.26.117.185', 'points': 2, 'online': True}, {'ip': '85.140.3.212', 'points': 2, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-29 20:03:38.284771
+
+
+SESSION STARTED at 2024-12-30 10:24:05.640284
+2024-12-30 10:25:14.954058
+ива! 95.26.117.185 → 85.140.3.212
+[]
+[{'ip': '95.26.117.185', 'points': 1, 'online': True}, {'ip': '85.140.3.212', 'points': 1, 'online': True}]
+
+
+
+SESSION STARTED at 2024-12-30 10:46:59.020365
+
+
+SESSION STARTED at 2024-12-30 10:47:45.969318
+
+
+SESSION STARTED at 2024-12-30 10:52:18.586188
+
+
+SESSION STARTED at 2024-12-30 11:00:05.732317
+
+
+SESSION STARTED at 2024-12-30 11:02:08.929643
+
+
+SESSION STARTED at 2024-12-30 11:02:56.367444
+
+
+SESSION STARTED at 2024-12-30 11:08:49.016492
+
+
+SESSION STARTED at 2024-12-30 11:17:21.213973
+
+
+SESSION STARTED at 2024-12-30 11:26:25.379746
+
+
+SESSION STARTED at 2024-12-30 11:37:20.642797
+
+
+SESSION STARTED at 2024-12-30 13:08:55.572256
+
+
+SESSION STARTED at 2024-12-30 13:12:42.767702
+
+
+SESSION STARTED at 2024-12-30 13:13:14.465297
+
+
+SESSION STARTED at 2024-12-30 13:16:35.978763
+
+
+SESSION STARTED at 2024-12-30 13:17:30.404102
+2024-12-30 13:20:03.134075
+выключатель! 95.26.117.185 → 85.140.3.212
+['ЖИТЬ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 1, 'online': True, 'nickname': 'Ufa212'}]
+
+2024-12-30 13:21:16.130518
+радио! 85.140.3.212 → 95.26.117.185
+['ЖИТЬ', 'ХОРОШИЙ', 'ИСТИНА']
+[{'ip': '95.26.117.185', 'points': 2, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 2, 'online': True, 'nickname': 'Ufa212'}]
+
+
+
+SESSION STARTED at 2024-12-30 13:27:50.603305
+2024-12-30 13:28:27.445697
+кастрюля! 95.26.117.185 → 85.140.3.212
+[]
+[{'ip': '95.26.117.185', 'points': 1, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 1, 'online': True, 'nickname': 'Ufa212'}]
+
+
+
+SESSION STARTED at 2024-12-30 13:38:16.821270
+2024-12-30 13:38:42.109507
+какао! 95.26.117.185 Moscow185 → 85.140.3.212 Ufa212
+['ЧУВСТВОВАТЬ', 'ВИДЕТЬ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 1, 'online': True, 'nickname': 'Ufa212'}]
+
+2024-12-30 13:39:58.821676
+гора! 85.140.3.212 Ufa212 → 95.26.117.185 Moscow185
+['ЧУВСТВОВАТЬ', 'ВИДЕТЬ']
+[{'ip': '95.26.117.185', 'points': 2, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 2, 'online': True, 'nickname': 'Ufa212'}]
+
+
+
+SESSION STARTED at 2024-12-30 13:47:32.286502
+2024-12-30 13:48:11.441302
+кисть! 95.26.117.185 Moscow185 → 85.140.3.212 Ufa212
+['НАПРАВЛЕНИЕ', 'РАССТОЯНИЕ']
+[{'ip': '95.26.117.185', 'points': 1, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 1, 'online': True, 'nickname': 'Ufa212'}]
+
+2024-12-30 13:48:56.020343
+самолёт! 85.140.3.212 Ufa212 → 95.26.117.185 Moscow185
+['НАПРАВЛЕНИЕ', 'РАССТОЯНИЕ', '- ТОГДА']
+[{'ip': '95.26.117.185', 'points': 2, 'online': True, 'nickname': 'Moscow185'}, {'ip': '85.140.3.212', 'points': 2, 'online': True, 'nickname': 'Ufa212'}]
+
